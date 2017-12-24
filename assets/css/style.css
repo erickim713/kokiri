@@ -1,0 +1,102 @@
+html{
+    overflow-x: hidden
+}
+
+body{
+    margin: auto
+}
+
+.blackbackground{
+    background: black;    
+}
+
+.fullwidth{
+    padding: 0%;
+    height: 41.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.sectionTitle{
+    font-size: 2em;
+    text-align: center;
+}
+
+.section{
+    height: 41.5em;
+    padding: 0%;
+    text-align: center;    
+}
+
+.title{
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+
+tbody > tr:hover{
+    background: #f9f6f6;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+}
+/* learned that !important is basically like an override system. */
+.mr-left{
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.transparent{
+    background-color: transparent !important;
+}
+
+/* for some reason the container had max width included... probably for mobile device reasons... i think. */
+.container{
+    max-width: none;
+}
+
+.navbar{
+    z-index: 1;
+}
+
+.tableTitle{
+    font-family: 'Arvo', serif;
+}
+
+.non-selected{
+    color: #f0f0f0;
+}
+
+.selected{
+    border-bottom: solid black 1px;
+}
+
+.opened{
+    color: #49b447;
+}
+.closed{
+    color: #a1a1a1;
+}
+
+#currentTime{
+    text-align: center;
+    font-size: 10em;
+}
+
+
+
+#currentDate{
+    text-align: center;
+}
+
+/*TODO: at the end change this to transparent */
+/* .bg-light{
+    background-color: transparent !important;
+} */
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>우리끼리코끼리</title>
+    <!-- fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+    <!-- third party open source frameworks bootstrap, jquery, popper -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- personal stuff -->
+    <script src="./../assets/js/script.js"></script>
+    <link rel="stylesheet" href="./../assets/css/style.css">
+</head>
+<body>
+    <a name="#top" id="top"></a>
+    <!-- nav -->
+    <nav id="navi" class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="#top">Kokiri Cafè</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mr-left">
+            <li class="nav-item">
+                <a class="nav-link" href="#menupoint">Menu <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#hourpoint">Hours</a>
+            </li>
+            </ul>
+
+        </div>
+    </nav>
+              <!--  -->
+    <div id='title' class="fluid-container fullwidth blackbackground">
+        <strong class="title">Kokiri Cafè</strong>
+    </div>
+    <!-- menu -->
+    <div class="container">
+        <a name="menupoint" id="menupoint">
+        <p class="sectionTitle"> <i class="fas fa-angle-left"></i> Menu <i class="fas fa-angle-right"></i></p>
+        </a>
+        <div>
+            <!-- <strong class="tableTitle">Drinks</strong> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <strong class="tableTitle">Espresso</strong>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Hot</th>
+                                    <th scope="col">Ice</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">에스프레소</th>
+                                    <td>3.5</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">아메리카노</th>
+                                    <td>3.5</td>
+                                    <td>4.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">헤이즐넛 아메리카노</th>
+                                    <td>4.0</td>
+                                    <td>4.5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">카라멜 마끼아또</th>
+                                    <td>4.3</td>
+                                    <td>4.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">카푸치노</th>
+                                    <td>4.0</td>
+                                    <td>4.5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">카페모카</th>
+                                    <td>4.3</td>
+                                    <td>4.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">플랫화이트</th>
+                                    <td>4.0</td>
+                                    <td>4.5</td>
+                                </tr>
+                                      
+                                </tbody>
+                              </table>
+
+                    </div>
+                    <div class="col-sm">
+                    <strong class="tableTitle">
+                        Latte
+                    </strong>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Hot</th>
+                                    <th scope="col">Ice</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">초코 라떼</th>
+                                    <td>4.3</td>
+                                    <td>4.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">고구마 라떼</th>
+                                    <td>4.3</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">그린티 라떼</th>
+                                    <td>4.3</td>
+                                    <td>4.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">카페 라떼</th>
+                                    <td>3.8</td>
+                                    <td>4.3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">바닐라 라떼</th>
+                                    <td>4.3</td>
+                                    <td>4.8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <strong class="tableTitle">Tea
+                            
+                        </strong>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Hot</th>
+                                    <th scope="col">Ice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">캐모마일</th>
+                                    <td>4.5</td>
+                                    <td>5.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">페퍼민트</th>
+                                    <td>4.5</td>
+                                    <td>5.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">얼그레이</th>
+                                    <td>4.5</td>
+                                    <td>5.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">레몬티</th>
+                                    <td>4.5</td>
+                                    <td>5.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자몽티</th>
+                                    <td>4.5</td>
+                                    <td>5.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">복숭아 레몬 아이스티</th>
+                                    <td>-</td>
+                                    <td>5.0</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                        <div class="col-sm">
+                            <strong class="tableTitle">Smoothie
+
+                            </strong>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Ice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">딸기 스무디</th>
+                                    <td>5.5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">딸기요거트 스무디</th>
+                                    <td>5.8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">고구마 스무디</th>
+                                    <td>5.8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="sectionTitle">
+            <a name="hourpoint" id="hourpoint">
+            <span id="opened">Opened</span>  <span id="closed">Closed</span>
+            </a>
+        </div>
+        <div id="time">
+            <div id="currentTime">{{ currentTime }}</div>
+        </div>
+    </div>
+
+    <!-- Espresso Chart -->
+</body>
+</html>
