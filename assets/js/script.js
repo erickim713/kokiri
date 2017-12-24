@@ -5,21 +5,23 @@ let broswerWidth, browserHeight
 window.onload = ()=>{
     console.log('window has been loaded');
     
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		console.log('mobile device detected');
+		broswerWidth = screen.width;
+		browserHeight = screen.height;
+		console.log(browserHeight);
+	}
+	else{
+		browserHeight = window.innerHeight;
+    	broswerWidth = window.innerWidth;
+	}
     
-    browserHeight = window.innerHeight;
-    broswerWidth = window.innerWidth;
     
 }
 
 $(document).ready(()=>{
 	$("#navi").hide();
-	$(window).scroll(function(){                          
-		if ($(this).scrollTop() > (browserHeight / 4)) {
-			$('#navi').fadeIn(500);
-		} else {
-			$('#navi').fadeOut(500);
-		}
-	});
+	
     //change the height of the cover background
 	$("#title").css('height', browserHeight);
 	let clock = new Vue({
@@ -27,6 +29,13 @@ $(document).ready(()=>{
 		data: {
 			currentTime: '',
 			date: ''
+		}
+	});
+	$(window).scroll(function(){                          
+		if ($(this).scrollTop() > (browserHeight / 4)) {
+			$('#navi').fadeIn(500);
+		} else {
+			$('#navi').fadeOut(500);
 		}
 	});
 	let week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
