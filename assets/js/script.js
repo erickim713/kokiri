@@ -54,7 +54,7 @@ $(document).ready(()=>{
 		'-' + fillUpwithZerios(currentTime.getMonth()+1, 2) + 
 		'-' + fillUpwithZerios(currentTime.getDate(), 2) + 
 		' ' + week[currentTime.getDay()];
-		if(currentTime.getHours() >= 11 && currentTime.getHours()<=23){
+		if(currentTime.getHours() >= 11 && currentTime.getHours()<23){
 			$("#currentTime").addClass("opened").removeClass("closed");
 			$("#opened").addClass("selected").removeClass('non-selected');
 			$("#closed").removeClass("selected").addClass('non-selected');
